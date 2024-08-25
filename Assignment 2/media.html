@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Media Elements</title>
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./table.html">AltSchool Schools</a>
+            <a href="./media.html">Media</a>
+            <a href="#myJourney">My Journey</a>
+        </nav>
+        <h1>About Me</h1>
+    </header>
+
+    <main>
+        <section id="myJourney">
+            <h2>My Journey</h2>
+            <picture>
+                <source media="(max-width: 750px)" srcset="./Img/my_photo.jpg">
+                <source media="(max-width: 1500px)" srcset="./Img/my_photo.jpg">
+                <source media="(min-width: 2500px)" srcset="./Img/my_photo.jpg">
+                <img src="./Img/my_photo.jpg" alt="My Journey Image">
+            </picture>
+            <p>
+                My journey into the tech world has been a transformative experience, shaping me into a versatile and dynamic individual. With a background in Biochemistry, I ventured into technology, aiming to merge my scientific expertise with cutting-edge tech skills. My journey has been fueled by curiosity, perseverance, and a passion for problem-solving.
+            </p>
+        </section>
+
+        <section>
+            <h2>My Inspiration</h2>
+            <audio controls>
+                <source src="./Audio/music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Listen to what inspires me on this journey.</p>
+        </section>
+
+        <section>
+            <h2>My Portfolio</h2>
+            <video controls width="600">
+                <source src="./Video/portfolio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Watch my portfolio to see the projects I've been working on.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AltSchool Africa</p>
+    </footer>
+</body>
+</html>
